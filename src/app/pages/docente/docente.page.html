@@ -1,13 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>docente</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">docente</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <app-header></app-header>
+
+  <ion-list class="list">
+    <ion-item *ngFor="let asignatura of asignaturas">
+      <div class="asignatura-container">
+        <div class="asignatura-nombre">
+          {{ asignatura.nombre}} - {{asignatura.id}}
+        </div>
+      </div>
+      <ion-button  class="qrbutton" fill="outline" size="small"(click)="generarQR(asignatura.id)">Generar Qr</ion-button>
+
+    </ion-item>
+  </ion-list>
+
+  <app-footer></app-footer>
+
+
+
 </ion-content>
