@@ -1,0 +1,9 @@
+ion-content {
+  --background: none; /* Elimina el fondo predeterminado de Ionic */
+  background: linear-gradient(180deg, #ffffff, #0043c0)
+}
+
+.logo-img {
+  width: 80px; /* Ajusta el ancho de la imagen */
+  height: auto; /* Mantiene la proporción original de la imagen */
+}
