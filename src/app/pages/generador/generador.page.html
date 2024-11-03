@@ -1,13 +1,8 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>generador</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">generador</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="content-wrapper">
+  <app-header></app-header>
+  <h5 style="text-align: center;">{{qrData}}</h5>
+  <div class="image-container">
+    <canvas #qrCanvas ></canvas>
+  </div>
+  <app-footer></app-footer>
 </ion-content>
