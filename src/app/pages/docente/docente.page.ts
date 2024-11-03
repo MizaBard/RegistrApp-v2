@@ -6,8 +6,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-docente',
-  templateUrl: './docente.component.html',
-  styleUrls: ['./docente.component.scss']
+  templateUrl: './docente.page.html',
+  styleUrls: ['./docente.page.scss']
 })
 export class DocenteComponent implements OnInit, OnDestroy {
   private authService = inject(AuthService); // Obtener el servicio de autenticación

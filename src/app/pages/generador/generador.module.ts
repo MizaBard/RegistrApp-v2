@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { GeneradorPageRoutingModule } from './generador-routing.module';
 
 import { GeneradorPage } from './generador.page';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GeneradorPageRoutingModule
+    GeneradorPageRoutingModule,
+    SharedModule
   ],
   declarations: [GeneradorPage]
 })
