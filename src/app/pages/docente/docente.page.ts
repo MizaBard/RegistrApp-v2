@@ -3,13 +3,14 @@ import QRious from 'qrious';
 import { Subscription } from 'rxjs';
 //import { AuthService } from 'src/app/servicio/auth.service';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/firebase/auth.service';
 
 @Component({
   selector: 'app-docente',
   templateUrl: './docente.page.html',
   styleUrls: ['./docente.page.scss']
 })
-export class DocenteComponent implements OnInit, OnDestroy {
+export class DocentePage implements OnInit, OnDestroy {
   private authService = inject(AuthService); // Obtener el servicio de autenticación
   usuario: string= ""; // Campo para almacenar el nombre del usuario
   //@ts-ignore
@@ -46,12 +47,8 @@ export class DocenteComponent implements OnInit, OnDestroy {
     this.router.navigate(['/generador'],{queryParams: {data:this.qrData}});
   }
   ngOnInit() {
-    this.subscriptionAuthService = this.authService.currentUser$.subscribe(usuario => {
-      this.usuario = usuario
-      console.log('Docente:', usuario);
-    }); // Obtiene el nombre del usuario logueado
-  }
 
+  }
   ngOnDestroy() {
     this.subscriptionAuthService?.unsubscribe(); // Desuscribirse del observable del estado de autenticación
   }

@@ -19,23 +19,21 @@
     "target": "es2022",
     "module": "es2020",
     "lib": [
-      "es2018", 
+      "es2018",
       "dom"
     ],
     "useDefineForClassFields": false,
     "typeRoots": [
       "node_modules/@types",
       "src/@types" // Asegúrate de incluir esta línea
-    ],
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  },
-  {
+    "strictTemplates": true,
     "strictPropertyInitialization": false,
-	  "strictNullChecks": false
+    "strictNullChecks": false
   }
 }

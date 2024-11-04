@@ -7,7 +7,7 @@ import { AlertController } from '@ionic/angular';  // Importamos AlertController
   templateUrl: './recuperar-pass.page.html',
   styleUrls: ['./recuperar-pass.page.scss'],
 })
-export class RecuperarPassComponent  implements OnInit {
+export class RecuperarPassPage  implements OnInit {
 
   constructor(private alertController: AlertController) { }
 

@@ -6,10 +6,10 @@ import QRious from 'qrious';
 
 @Component({
   selector: 'app-generador',
-  templateUrl: './generador.component.html',
-  styleUrls: ['./generador.component.scss'],
+  templateUrl: './generador.page.html',
+  styleUrls: ['./generador.page.scss'],
 })
-export class GeneradorComponent implements OnInit,AfterViewInit {
+export class GeneradorPage implements OnInit,AfterViewInit {
 
   asignaturaId!: string;  // Inicialización con "!"
   @ViewChild('qrCanvas') qrCanvas!: ElementRef<HTMLCanvasElement>; // Referencia al canvas

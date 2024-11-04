@@ -19,7 +19,7 @@ interface Usuario {
   templateUrl: './registrar.page.html',
   styleUrls: ['./registrar.page.scss'],
 })
-export class RegistrarComponent implements OnInit {
+export class RegistrarPage implements OnInit {
 
   usuario: Usuario = { //objeto tipo usuario
     id: '',
